@@ -3,7 +3,9 @@ import React from 'react';
 import {Dancing_Script, Roboto} from 'next/font/google'
 import { FiSearch } from "react-icons/fi";
 import { IoPersonCircleOutline } from "react-icons/io5";
-import { AiOutlineShoppingCart } from "react-icons/ai"
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import Featured from '@/components/Featured'
+import Products from '@/components/Products';
 
 const dancing = Dancing_Script({
   subsets: ['latin'],
@@ -16,7 +18,8 @@ const roboto = Roboto({
 
 const Home = () => {
   return (
-    <div className='bg-green-500'>
+    <div>
+      <div className='bg-green-500'>
      <div className='flex items-center relative text-white ml-20'>
      <Image src="/logo.png" alt='Website logo' width={100} height={100} className='text-green-500'></Image>
      <p className={`${dancing.className} text-5xl`}>FindItAll</p>
@@ -33,6 +36,9 @@ const Home = () => {
     <button className={`${roboto.className} font-medium bg-orange-400 p-3 rounded-2xl ml-4 text-xl`}>Sign up</button>
     <button><AiOutlineShoppingCart  className='ml-6 text-4xl'/></button>
      </div>
+    </div>
+    <Featured></Featured>
+    <Products></Products>
     </div>
   );
 };
