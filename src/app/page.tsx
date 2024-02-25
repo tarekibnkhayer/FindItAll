@@ -6,6 +6,8 @@ import { IoPersonCircleOutline } from "react-icons/io5";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import Featured from '@/components/Featured'
 import Products from '@/components/Products';
+import Footer from '@/components/Footer';
+import Reviews from '@/components/Reviews';
 
 const dancing = Dancing_Script({
   subsets: ['latin'],
@@ -39,6 +41,8 @@ const Home = () => {
     </div>
     <Featured></Featured>
     <Products></Products>
+    <Reviews></Reviews>
+    <Footer></Footer>
     </div>
   );
 };
