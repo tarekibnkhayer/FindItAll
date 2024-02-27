@@ -22,21 +22,21 @@ const Home = () => {
   return (
     <div>
       <div className='bg-green-500'>
-     <div className='flex items-center relative text-white ml-20'>
+     <div className='flex items-center  text-white md:ml-20'>
      <Image src="/logo.png" alt='Website logo' width={100} height={100} className='text-green-500'></Image>
      <p className={`${dancing.className} text-5xl`}>FindItAll</p>
-     <input type="text" name="" id="" className='shadow-2xl ml-10  pl-4 w-2/5 h-12 rounded-lg text-black' placeholder='Search Products' />
-     <div className='flex text-xl items-center gap-3 bg-orange-400 rounded-sm  p-2  h-12'>
+     <input type="text" name="" id="" className='shadow-2xl ml-10  pl-4 w-2/5 h-12 md:flex rounded-lg text-black hidden' placeholder='Search Products' />
+     <div className='md:flex text-xl items-center gap-3 bg-orange-400 rounded-sm  p-2  h-12 hidden'>
       <FiSearch/>
       <p>Search</p>
      </div>
-    <button className='flex flex-row items-center gap-1 ml-4'>
+    <button className='md:flex hidden flex-row items-center gap-1 ml-4'>
     <IoPersonCircleOutline className='text-4xl'/>
      <p className={`${roboto.className}  text-2xl`}>Login</p> 
     </button>
     <p className='ml-4'>|</p>
-    <button className={`${roboto.className} font-medium bg-orange-400 p-3 rounded-2xl ml-4 text-xl`}>Sign up</button>
-    <button><AiOutlineShoppingCart  className='ml-6 text-4xl'/></button>
+    <button className={`${roboto.className} font-medium bg-orange-400 p-3 rounded-2xl ml-4 text-xl hidden md:flex`}>Sign up</button>
+    <button><AiOutlineShoppingCart  className='ml-6 text-4xl hidden md:flex'/></button>
      </div>
     </div>
     <Featured></Featured>

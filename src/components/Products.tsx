@@ -10,7 +10,7 @@ const Products = async () => {
         <div className="max-w-7xl mx-auto">
            <div className="grid xl:grid-cols-3 gap-5">
            {
-                products.map((product:any) => <div key={product.any} className="card w-96 bg-base-100 shadow-xl">
+                products.map((product:any) => <div key={product.id} className="card w-96 bg-base-100 shadow-xl">
                 <figure><img src={product.image} alt="product pics"  className="h-96" /></figure>
                 <div className="card-body">
                   <h2 className="card-title">{product.title.slice(0,20)}</h2>
